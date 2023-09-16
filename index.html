@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코딩네컷</title>
+    <style>
+      /* 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: 'BookkMyungjo-Bd';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+        }
+      /* body태그 자체에 css 요소 부여 */
+        body {
+	        font-family: "BookkMyungjo-Bd";
+	        margin: 0;
+	        display: flex;
+	        justify-content: center;
+	        background-image: url("./img.jpg");
+            background-size: auto;
+        }
+
+        .container {
+            width: 390px;
+            background-color: #FC9FA6;
+            height: 100%;
+        }
+
+        .photos {
+            margin-top: 30px;
+        }
+
+        .photo-frame {
+            background-color: #FFF6DE;
+            margin: 15px 20px;
+            height: 200px;
+            background-size: cover;
+            position: relative;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .f-title {
+            color: #3D2728;
+            font-size: 25px;
+            font-weight: 1500;
+        }
+
+        .f-date {
+            color: #3D2728;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        #image1 {
+            background-image: url('./image1.png');
+            
+        }
+
+        #image2 {
+            background-image: url('./image2.png');
+            
+        }
+
+        #image3 {
+            background-image: url('./image3.png');
+        }
+
+        #image4 {
+            background-image: url('./image4.gif');
+        }
+
+        .photo_description {
+            color: #FFFDDE;
+            width: fit-content;
+            padding: 0 20px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            transform: translate(-50%);
+            left: 50%;
+        }
+	</style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo_description">
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo_description">
+                </span>
+            </div>
+            <div id="image4" class="photo-frame">
+                <span id="desc4" class="photo_description">
+                </span>
+            </div>
+        </div>
+    <div class="footer">
+        <p class="f-title">"anyone can be anything"</p>
+        <p class="f-date">2023.09.16</p>
+    </div>
+  </body>
+</html>
